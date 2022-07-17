@@ -1,10 +1,10 @@
-1 pandas
-2 numpy
-3 math
-4 datetime
-5 sklearn
-6 tensorflow
-7 sequential
-8 keras
-9 itertools
-10 plotly
+pandas
+numpy
+math
+datetime
+sklearn
+tensorflow
+sequential
+keras
+itertools
+plotly
