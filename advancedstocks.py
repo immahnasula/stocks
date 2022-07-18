@@ -53,13 +53,13 @@ from itertools import cycle
 import plotly.graph_objects as go
 import plotly.express as px
 from plotly.subplots import make_subplots
-import os 
+
 
 
 # In[7]:
 
+import os
 
-print(os.listdir("C:\\Users\\Halima Nasula\\Downloads"))
 
 
 # In[ ]:
@@ -74,7 +74,7 @@ print(os.listdir("C:\\Users\\Halima Nasula\\Downloads"))
 
 
 #loading dataset
-bist100 = pd.read_csv("C:/Users/Halima Nasula/Downloads/RELIANCE.csv")
+bist100 = pd.read_csv('../input/RELIANCE.csv')
 bist100.head()
 
 
