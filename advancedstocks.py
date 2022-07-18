@@ -11,24 +11,7 @@
 
 # # Advanced Stock Prediction using LSTM and GRU
 
-# ### Objectives 
-# 
-# #### For LSTM, GRU and Combination of the two neural networks, analyze them using Evaluation Matrices: 
-# RMSE, MSE and MAE
-# 
-# Explained variance regression score
-# 
-# R2 score for regression
-# 
-# Mean Gamma deviance regression loss (MGD) and Mean Poisson deviance regression loss (MPD)
-# 
-# Comparision between original stock close price vs predicted close price with chart
-# 
-# Predicting next 10 days
-# 
-# Plotting last 15 days and next predicted 10 days
-# 
-# Plotting whole closing stock price with next 10 days prediction
+
 
 # In[6]:
 
@@ -64,8 +47,27 @@ import os
 
 # In[ ]:
 
-
-
+st.title('Advanced Stock Prediction using LSTM and GRU')
+st.markdown("""
+# ### Objectives 
+# 
+# #### For LSTM, GRU and Combination of the two neural networks, analyze them using Evaluation Matrices: 
+# RMSE, MSE and MAE
+# 
+# Explained variance regression score
+# 
+# R2 score for regression
+# 
+# Mean Gamma deviance regression loss (MGD) and Mean Poisson deviance regression loss (MPD)
+# 
+# Comparision between original stock close price vs predicted close price with chart
+# 
+# Predicting next 10 days
+# 
+# Plotting last 15 days and next predicted 10 days
+# 
+# Plotting whole closing stock price with next 10 days prediction
+""")
 
 
 # ### Import Dataset
@@ -187,7 +189,7 @@ bist100.groupby(bist100['date'].dt.strftime('%B'))['low'].min()
 
 # In[20]:
 
-st.title('Telco Customer Churn Prediction')
+
 monthvise_high= bist100.groupby(bist100['date'].dt.strftime('%B'))['high'].max()
 monthvise_low= bist100.groupby(bist100['date'].dt.strftime('%B'))['low'].min()
 
