@@ -248,7 +248,9 @@ fig.update_layout(title_text='Stock close price chart', plot_bgcolor='white', fo
 fig.update_xaxes(showgrid=False)
 fig.update_yaxes(showgrid=False)
 fig.show()
-st.line_chart(fig)
+
+
+st.line_chart(closedf)
 
 
 # #### Normalizing / scaling close value between 0 to 1
