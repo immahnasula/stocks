@@ -349,7 +349,7 @@ model.summary()
 # In[32]:
 
 
-model.fit(X_train,y_train,validation_data=(X_test,y_test),epochs=200,batch_size=5,verbose=1)
+model.fit(X_train,y_train,validation_data=(X_test,y_test),epochs=50,batch_size=5,verbose=1)
 
 
 # In[33]:
@@ -608,7 +608,7 @@ model.summary()
 # In[47]:
 
 
-model.fit(X_train,y_train,validation_data=(X_test,y_test),epochs=200,batch_size=5,verbose=1)
+model.fit(X_train,y_train,validation_data=(X_test,y_test),epochs=50,batch_size=5,verbose=1)
 
 
 # In[48]:
@@ -865,7 +865,7 @@ model.summary()
 # In[62]:
 
 
-model.fit(X_train,y_train,validation_data=(X_test,y_test),epochs=200,batch_size=5,verbose=1)
+model.fit(X_train,y_train,validation_data=(X_test,y_test),epochs=50,batch_size=5,verbose=1)
 
 
 # In[63]:
