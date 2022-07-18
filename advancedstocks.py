@@ -74,7 +74,7 @@ import os
 
 
 #loading dataset
-bist100 = pd.read_csv('../input/RELIANCE.csv')
+bist100 = pd.read_csv('code_/RELIANCE.csv')
 bist100.head()
 
 
