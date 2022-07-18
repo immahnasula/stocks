@@ -187,7 +187,7 @@ bist100.groupby(bist100['date'].dt.strftime('%B'))['low'].min()
 
 # In[20]:
 
-
+st.title('Telco Customer Churn Prediction')
 monthvise_high= bist100.groupby(bist100['date'].dt.strftime('%B'))['high'].max()
 monthvise_low= bist100.groupby(bist100['date'].dt.strftime('%B'))['low'].min()
 
