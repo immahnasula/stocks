@@ -237,7 +237,7 @@ closedf = bist100[['date','close']]
 print("Shape of close dataframe:", closedf.shape)
 
 
-# #### Plotting stock close price chart
+st.header('stock close price chart')
 
 # In[24]:
 
@@ -248,6 +248,7 @@ fig.update_layout(title_text='Stock close price chart', plot_bgcolor='white', fo
 fig.update_xaxes(showgrid=False)
 fig.update_yaxes(showgrid=False)
 fig.show()
+st.line_chart(fig)
 
 
 # #### Normalizing / scaling close value between 0 to 1
@@ -1112,6 +1113,12 @@ fig.show()
 
 # In[ ]:
 
-
+def user_input_features():
+    model = st.sidebar.selectbox('Model', ('LSTM', 'GRU', 'LSTM+GRU'))
+    senior_citizen = st.sidebar.selectbox('Senior Citizen', ('Yes', 'No'))
+    partner = st.sidebar.selectbox('Partner', ('Yes', 'No'))
+    dependents = st.sidebar.selectbox('Dependents', ('Yes', 'No'))
+    phone_service = st.sidebar.selectbox('Phone Service', ('Yes', 'No', 'No phone service'))
+    multiple_lines = st.sidebar.selectbox('Multiple Lines', ('Yes', 'No'))
 
 
