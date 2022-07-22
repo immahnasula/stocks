@@ -1122,5 +1122,10 @@ def user_input_features():
     dependents = st.sidebar.selectbox('Dependents', ('Yes', 'No'))
     phone_service = st.sidebar.selectbox('Phone Service', ('Yes', 'No', 'No phone service'))
     multiple_lines = st.sidebar.selectbox('Multiple Lines', ('Yes', 'No'))
+    
+st.set_option('deprecation.showPyplotGlobalUse', False)
+st.markdown(download_dataset(bist100), unsafe_allow_html=True)
+
+st.markdown("## Prediction Result")
 
 
